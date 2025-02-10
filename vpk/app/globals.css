@@ -1,0 +1,231 @@
+/* Header Adjustments */
+:root {
+  /* HSL Color Scheme */
+  --paynes-gray: hsla(222, 16%, 39%, 1);
+  --puce: hsla(350, 56%, 68%, 1);
+  --baby-powder: hsla(30, 100%, 99%, 1);
+  --black-bean: hsla(0, 100%, 8%, 1);
+  --timberwolf: hsla(71, 13%, 83%, 1);
+  --taupe-grey: hsla(273, 4%, 52%);
+  --cadet-grey: hsla(210, 5%, 64%);
+  --ash-grey: hsla(184, 12%, 72%);
+  --pink-1: #ffb7b8;
+  --orange-1: #ED6228;
+  --play-blue: #4F67B1; 
+  --nude-stone: #FFD7b9;
+  --maroon: #ab352a;
+  --lighter-blue: #b7d9ff;
+  --cream: #f8eee5;
+
+}
+
+#header {
+  width: 100%;
+  background-color: var(--baby-powder);
+  color: var(--play-blue);
+  padding: 2rem 1.5rem; 
+  text-align: center;
+  font-size: 2.5rem; 
+  font-family: 'Calistoga', system-ui;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-sizing: border-box; 
+}
+
+
+#text-area {
+  padding: 2rem 8px; 
+  font-size: 1.2rem; 
+  font-family: 'Rubik Variable', sans-serif;
+  background-color: var(--timberwolf);
+  text-align: center;
+  box-sizing: border-box; 
+}
+
+#text-area p {
+  color: var(--black-bean);
+  font-size: 1.2rem; 
+  font-family: 'Rubik Variable', sans-serif;
+}
+
+
+#home-page {
+  display: grid;
+  grid-template-rows: auto 1fr auto; 
+  min-height: 100vh;
+  gap: 16px;
+}
+
+#main-content {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1; 
+  box-sizing: border-box; /* Prevent overflow */
+}
+
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem; 
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  justify-items: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+}
+
+
+.tile {
+  padding: 2rem;
+  background-color: var(--puce);
+  color: var(--baby-powder);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12rem;
+  width: 20rem;
+  box-sizing: border-box; /* Ensure no overflow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tile-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Rubik Variable', sans-serif;
+}
+
+.tile-description {
+  font-size: 1rem;
+  font-family: 'Rubik Variable', sans-serif;
+  color: var(--baby-powder);
+}
+
+
+#footer {
+  background-color: var(--paynes-gray);
+  color: var(--baby-powder);
+  padding: 1rem;
+  text-align: center;
+}
+body {
+  font-family: 'Rubik Variable', sans-serif;
+}
+
+.tile-1 {
+  padding: 2rem;
+  background-color: var(--puce);
+  color: var(--baby-powder);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px; /* Rounded square corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16rem;
+  width: 16rem; /* Fixed width and height for squares */
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* Make it look like a clickable button */
+  user-select: none; /* Disable text selection */
+}
+.tile-2 {
+  padding: 2rem;
+  background-color: var(--puce);
+  color: var(--baby-powder);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px; /* Rounded square corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16rem;
+  width: 16rem; /* Fixed width and height for squares */
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tile-3 {
+  padding: 2rem;
+  background-color: var(--puce);
+  color: var(--baby-powder);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px; /* Rounded square corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16rem;
+  width: 16rem; /* Fixed width and height for squares */
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tile-4 {
+  padding: 2rem;
+  background-color: var(--puce);
+  color: var(--baby-powder);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px; /* Rounded square corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16rem;
+  width: 16rem; /* Fixed width and height for squares */
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tile-5 {
+  padding: 2rem;
+  background-color: var(--puce);
+  color: var(--baby-powder);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px; /* Rounded square corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16rem;
+  width: 16rem; /* Fixed width and height for squares */
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tile-6 {
+  padding: 2rem;
+  background-color: var(--puce);
+  color: var(--baby-powder);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px; /* Rounded square corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16rem;
+  width: 16rem; /* Fixed width and height for squares */
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+/* Hover Effect */
+.tile:hover {
+  transform: translateY(-10px) scale(1.1); /* Lift and enlarge the hovered tile */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add a shadow to enhance lift effect */
+  background-color: var(--lighter-blue); /* Change color on hover (choose any color) */
+  color: var(--play-blue);
+}
+
+
+/* Shrink effect on non-hovered tiles */
+.tile-grid .tile:not(:hover) {
+  transform: scale(0.95); /* Shrink the non-hovered tiles */
+}
+
+
