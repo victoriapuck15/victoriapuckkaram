@@ -1,7 +1,9 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./App.css";
 import toya from "./toya.JPG";
-import { SlSocialGithub } from "react-icons/sl";
+import { BiLogoGithub } from "react-icons/bi";
+import { BiMailSend } from "react-icons/bi";
+import { BiLogoLinkedinSquare } from "react-icons/bi";
 
 function App() {
   const [navScrolled, setNavScrolled] = useState(false);
@@ -207,14 +209,15 @@ function SkillsGrid() {
 function SocialIcons() {
   return (
     <div className="social-icons">
+    
       <a href="mailto:vbp5103@gmail.com" target="_blank" rel="noopener noreferrer">
-        <img src={SlSocialGithub} alt="Email" />
+      <BiMailSend size={35} />
       </a>
       <a href="https://www.linkedin.com/in/victoriapuckkaram/" target="_blank" rel="noopener noreferrer">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" />
+        <BiLogoLinkedinSquare size={35} />
       </a>
       <a href="https://github.com/victoriapuck15" target="_blank" rel="noopener noreferrer">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" />
+        <BiLogoGithub size={35} />
       </a>
     </div>
   );
