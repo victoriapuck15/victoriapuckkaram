@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #FAF9F6;
+  color: #4C6663;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Navigation */
+.navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px 0;
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 10;
+}
+
+.navigation.scrolled {
+  background-color: #FAF9F6;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #4C6663;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigation a:hover {
+  background-color: #4C6663;
+  color: #FAF9F6;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px;
+  gap: 50px;
+  background-color: #4C6663;
+}
+
+.hero-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #FAF9F6;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #FAF9F6;
+}
+
+.hero-photo img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #FAF9F6;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-photo img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(76, 102, 99, 0.5);
+}
+
+/* Section styling */
+.page-section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+  border-top: 4px solid #4C6663;
+}
+
+.page-section h2 {
+  color: #4C6663;
+  margin-bottom: 20px;
+}
+
+/* Fade-in animation */
+.fade-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Project cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  color: #FAF9F6;
+  border-radius: 0;
+  border: none;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 250px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
