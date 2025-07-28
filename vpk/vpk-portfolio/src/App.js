@@ -6,8 +6,9 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import { BiLogoLinkedinSquare } from "react-icons/bi";
 //import { DiPython,DiNodejsSmall,DiJavascript,DiJava,DiPostgresql,DiMongodb,DiSqllite} from "react-icons/di";
 //import { SiTerraform } from "react-icons/si";
-import Flicking, { useFlickingReactiveAPI } from "@egjs/react-flicking";
-import Panel from "@site/src/component/Panel";
+import Carousel from 'react-bootstrap/Carousel';
+import ExampleCarouselImage from 'components/ExampleCarouselImage';
+
 
 
 function App() {
@@ -41,7 +42,7 @@ function App() {
       <HeroSection />
 
       <main className="content">
-        <ProjectsSlider/>
+        
        
         <Section title="Skills" id="skills">
           <SkillsGrid />
@@ -91,26 +92,7 @@ function Section({ title, children, id }) {
   );
 }
 
-function ProjectsSlider(){
-  const flickingRef = React.createRef();
-  const {
-    indexProgress
-  } = useFlickingReactiveAPI(flickingRef);
-  const length = 5;
-  return (
-    <Flicking ref={flickingRef} circular={true} className="flicking-coverflow">
-      {[0, 1, 2, 3, 4].map((index) => {
-        const childProgress = (index - indexProgress + length * 1.5) % length -  length * 0.5;
-        const scale = Math.max(0, 0.9 - Math.abs(childProgress) * 0.2);
 
-        return <Panel key={index} index={index} style={{
-          transformOrigin: `${50 - childProgress * 50}% 50%`,
-          transform: `rotateY(${-childProgress * 50}deg) scale(${scale})`
-        }} />;
-      })}
-    </Flicking>
-  );
-}
 
 
 
