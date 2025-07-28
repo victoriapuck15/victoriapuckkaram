@@ -7,7 +7,7 @@ import { BiLogoLinkedinSquare } from "react-icons/bi";
 //import { DiPython,DiNodejsSmall,DiJavascript,DiJava,DiPostgresql,DiMongodb,DiSqllite} from "react-icons/di";
 //import { SiTerraform } from "react-icons/si";
 import Carousel from 'react-bootstrap/Carousel';
-import ExampleCarouselImage from 'components/ExampleCarouselImage';
+
 
 
 
