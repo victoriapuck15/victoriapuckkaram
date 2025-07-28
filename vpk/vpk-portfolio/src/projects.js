@@ -6,7 +6,7 @@ const projects = [
       description: "A quantative Macroeconomic proxy approach to consumer confience analysis.",
       color: "#5B2E48",
       links: [
-        { label: "Download the Paper", url: "https://drive.google.com/file/d/1ObbHE_9tV2TSpth2O1NMAj43ylXojrQ8/view?usp=sharing" },
+        { label: "Read the Paper", url: "https://drive.google.com/file/d/1ObbHE_9tV2TSpth2O1NMAj43ylXojrQ8/view?usp=sharing" },
         { label: "View Slide Deck", url: "https://www.canva.com/design/DAF5trCSm7Y/fdGgvphPrnB1CkaG5pVPxw/view" },
         { label: "GitHub Repo", url: "https://github.com/victoriapuck15/ConsumerSentimentRecessionProject" }
       ],
