@@ -21,7 +21,7 @@ function App() {
       <HeroSection />
 
       <main className="content">
-        <Section title="Projects" id="projects">
+        <Section  id="projects">
           <div className="card-grid">
             {projects.map((proj) => (
               <ProjectCard
