@@ -29,31 +29,16 @@ const projects = [
       description: "MAXAR Intelligence Supply & Demand Analysis Project.",
       color: "#76A9C4",
       links: [
-        { label: "GitHub Repo", url: "#" }
+        { label: "See More", url: "https://drive.google.com/drive/folders/1YgmUqo43jz-3qp-Q8TT3UiiCqzI-7dkl?usp=sharing" }
       ],
       section1: "Research Question",
       researchQuestion: `How can data visualization optimize supply & demand tracking in real-time?`,
-      techniques: ["", "", "", "L"],
-      outcomes: `TBD.`,
+      techniques: ["PyMc", "Scikit Learn", "NumPy", "Seaborn","matplotlib"],
+      outcomes: `A comprehensive dashboard to support the sales team in contract seeking, sales/building prospects, and improving customer
+expectations by leveraging global supply and demand data.`,
       icon1: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg",
       icon2: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain-wordmark.svg",
       icon3: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg",
-    },
-    {
-      id: "spot-suggest",
-      title: "Spot Suggest",
-      description: "Machine Learning tool to make song recommendations.",
-      color: "#D2A4A9",
-      links: [
-        { label: "GitHub Repo", url: "#" }
-      ],
-      section1: "The Why",
-      researchQuestion: `Can we predict user music preferences using listening behavior and clustering models?`,
-      techniques: ["Python", "Pandas", "Scikit-learn", "Spotify API"],
-      icon1: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg",
-      icon2: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg",
-      icon3: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg",
-      outcomes: `TBD`
     },
     {
       id: "x-read",
@@ -67,6 +52,9 @@ const projects = [
       section1: "Objective",
       researchQuestion: `To aid Americans seeking health care amidst the Rural Health Crisis by automating the diagnosis of common Cardiothoracic illnesses, with an accuracy comparable to that of a physician.`,
       techniques: ["Python", "TensorFlow", "Keras", "Java"],
+      icon1: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg",
+      icon2: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg",
+      icon3: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/keras/keras-original.svg",
       outcomes: `CNN was able to classify the illness exhibited in the inputted x-ray image in seconds with an accuracy of 65-75% on average . The most accurately diagnosed illness was that of X-rays that exhibited a visible mass, and exhibited an accuracy of 91%.`
     },
     {
@@ -75,23 +63,15 @@ const projects = [
       description: "Leveraging web scraping to perform accessibility analysis.",
       color: "#B86F52",
       links: [
-        { label: "GitHub Repo", url: "#" }
+        { label: "GitHub Repo", url: "https://github.com/victoriapuck15/Webscraping" }
       ],
-      researchQuestion: `What barriers exist in digital healthcare access across demographics?`,
+      section1: "Overview",
+      researchQuestion: `In today's age of digital healthcare, users with disabilities such as blindness or being hard of hearing are unable or limited in their access to healthcare. In order to foster change to make healthcare accessible to all, the project aims to better understand the current level of accessibility and what elements are missing across digital healthcare.`,
       techniques: ["Python", "BeautifulSoup", "Pandas", "Tableau"],
-      outcomes: `Produced a comprehensive report highlighting 3 key access bottlenecks.`
-    },
-    {
-      id: "course-work",
-      title: "Course Work",
-      description: "Studies and coursework at Penn State.",
-      color: "#9FA4C4",
-      links: [
-        { label: "GitHub Repo", url: "#" }
-      ],
-      researchQuestion: `How can advanced coursework projects demonstrate real-world application of data science?`,
-      techniques: ["R", "Python", "Terraform", "Java"],
-      outcomes: `Completed a range of data-driven projects showcasing practical and theoretical expertise.`
+      icon1: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg",
+      icon2: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original.svg",
+      icon3: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pypi/pypi-original.svg",
+      outcomes: `Research highlighted key, recurring painpoints for users with disabilities, to be included in published report. `
     }
   ];
   
