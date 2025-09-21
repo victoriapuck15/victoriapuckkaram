@@ -4,6 +4,10 @@ import toya from "./toya.JPG";
 import { BiLogoGithub, BiLogoLinkedinSquare } from "react-icons/bi";
 import { MdOutlineMailOutline } from "react-icons/md";
 import projects from "./projects";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 function App() {
   const [navScrolled, setNavScrolled] = useState(false);
@@ -19,27 +23,41 @@ function App() {
     <div className="App">
       <Navigation scrolled={navScrolled} />
       <HeroSection />
+<main className="content">
+  <Section id="projects" title="">
+    <div className="projects-wrapper">
+      <div className="slider-column">
+        <Slider {...settings}>
+          {projects.map((proj) => (
+            <ProjectCard
+              key={proj.id}
+              title={proj.title}
+              description={proj.description}
+              color={proj.color}
+              icon1={proj.icon1}
+              icon2={proj.icon2}
+              icon3={proj.icon3}
+              onClick={() => setSelectedProject(proj)}
+            />
+          ))}
+        </Slider>
+      </div>
 
-      <main className="content">
-        <Section  id="projects">
-          <div className="card-grid">
-            {projects.map((proj) => (
-              <ProjectCard
-                key={proj.id}
-                title={proj.title}
-                description={proj.description}
-                color={proj.color}
-                icon1={proj.icon1}
-                icon2 = {proj.icon2}
-                icon3 = {proj.icon3}
-                onClick={() => setSelectedProject(proj)}
-              />
-            ))}
-          </div>
-        </Section>
+      <div className="text-column">
+        <h2>About the Projects</h2>
+        <p>
+          Here you can describe your projects in more detail, share insights,
+          goals, or anything else you'd like your visitors to know.
+        </p>
+        <p>
+          This right column is flexible — you can add images, links, or other
+          components here.
+        </p>
+      </div>
+    </div>
+  </Section>
+</main>
 
-
-      </main>
 
       {selectedProject && (
         <ProjectModal
@@ -88,21 +106,27 @@ function Section({ title, children, id }) {
   );
 }
 
-function ProjectCard({ title, description, color, onClick, icon1, icon2,icon3 }) {
+function ProjectCard({ title, description, color, onClick, icon1, icon2, icon3 }) {
   return (
     <div
-      className="card fade-section"
-      style={{ border: `3px solid ${color}` }}
+      className="card"
+      style={{ backgroundColor: color }}
       onClick={onClick}
     >
       <div className="card-text">
-        <h3 style={{ color }}>{title}</h3>
+        <h3>{title}</h3>
         <p>{description}</p>
-        <img src={icon1}width="40" height="40"/>   <img src={icon2}width="40" height="40"/>   <img src={icon3}width="40" height="40"/>
+        <div className="card-icons">
+          <img src={icon1} alt="tech1" />
+          <img src={icon2} alt="tech2" />
+          <img src={icon3} alt="tech3" />
+        </div>
       </div>
     </div>
   );
 }
+
+
 
 function ProjectModal({ project, onClose }) {
   return (
@@ -154,6 +178,28 @@ function SocialIcons() {
     </div>
   );
 }
+
+const settings = {
+  dots: true,
+  arrows: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  centerPadding: '0px',
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
+
+
+
 
 
 
