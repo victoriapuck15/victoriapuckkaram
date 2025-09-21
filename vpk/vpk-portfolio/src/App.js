@@ -117,14 +117,15 @@ function ProjectCard({ title, description, color, onClick, icon1, icon2, icon3 }
         <h3>{title}</h3>
         <p>{description}</p>
         <div className="card-icons">
-          <img src={icon1} alt="tech1" />
-          <img src={icon2} alt="tech2" />
-          <img src={icon3} alt="tech3" />
+          <i className={icon1} aria-hidden="true"></i>
+          <i className={icon2} aria-hidden="true"></i>
+          <i className={icon3} aria-hidden="true"></i>
         </div>
       </div>
     </div>
   );
 }
+
 
 
 
@@ -156,7 +157,7 @@ function ProjectModal({ project, onClose }) {
           ))}
         </ul>
 
-        <h3>Outcomes</h3>
+        <h3>{project.lastTitle}</h3>
         <p>{project.outcomes}</p>
       </div>
     </div>

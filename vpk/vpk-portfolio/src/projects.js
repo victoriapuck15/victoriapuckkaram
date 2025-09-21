@@ -18,9 +18,10 @@ const projects = [
         "Markov Chain Monte Carlo Analysis",
         "Stein-Thinning"
       ],
-      icon1: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg",
-      icon2: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matlab/matlab-original.svg",
-      icon3: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rstudio/rstudio-plain.svg",
+      icon1: "devicon-python-plain",
+      icon2: "devicon-matlab-plain",
+      icon3: "devicon-rstudio-plain",
+      lastTitle: 'Findings',
       outcomes: `The Consumer Sentiment Index (CSI) is a pivotal indicator of consumer confidence and perception regarding current and future economic conditions. In the correlation analysis between the CSI and CMCI the correlation coefficient is 0.65, indicating a moderately positive correlation. The associated p-value is extremely small (3.29 × 10−12), leading to the conclusion that the is statistically significant. Therefore, there is compelling evidence to suggest a meaningful relationship between the CSI and the CMCI.`
     },
     {
@@ -36,9 +37,10 @@ const projects = [
       techniques: ["PyMc", "Scikit Learn", "NumPy", "Seaborn","matplotlib"],
       outcomes: `A comprehensive dashboard to support the sales team in contract seeking, sales/building prospects, and improving customer
 expectations by leveraging global supply and demand data.`,
-      icon1: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg",
-      icon2: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain-wordmark.svg",
-      icon3: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg",
+      lastTitle: 'Outcomes',
+      icon1: "devicon-python-plain",
+      icon2: "devicon-postgresql-plain",
+      icon3: "devicon-scikitlearn-plain",
     },
     {
       id: "x-read",
@@ -52,9 +54,10 @@ expectations by leveraging global supply and demand data.`,
       section1: "Objective",
       researchQuestion: `To aid Americans seeking health care amidst the Rural Health Crisis by automating the diagnosis of common Cardiothoracic illnesses, with an accuracy comparable to that of a physician.`,
       techniques: ["Python", "TensorFlow", "Keras", "Java"],
-      icon1: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg",
-      icon2: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg",
-      icon3: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/keras/keras-original.svg",
+      icon1: "devicon-tensorflow-original",
+      icon2: "devicon-python-plain",
+      icon3: "devicon-keras-plain",
+      lastTitle: 'Outcomes',
       outcomes: `CNN was able to classify the illness exhibited in the inputted x-ray image in seconds with an accuracy of 65-75% on average . The most accurately diagnosed illness was that of X-rays that exhibited a visible mass, and exhibited an accuracy of 91%.`
     },
     {
@@ -68,10 +71,29 @@ expectations by leveraging global supply and demand data.`,
       section1: "Overview",
       researchQuestion: `In today's age of digital healthcare, users with disabilities such as blindness or being hard of hearing are unable or limited in their access to healthcare. In order to foster change to make healthcare accessible to all, the project aims to better understand the current level of accessibility and what elements are missing across digital healthcare.`,
       techniques: ["Python", "BeautifulSoup", "Pandas", "Tableau"],
-      icon1: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg",
-      icon2: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original.svg",
-      icon3: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pypi/pypi-original.svg",
+      icon1: "devicon-python-plain",
+      icon2: "devicon-jupyter-plain-wordmark",
+      icon3: "devicon-pypi-plain",
+      lastTitle: 'Outcomes',
       outcomes: `Research highlighted key, recurring painpoints for users with disabilities, to be included in published report. `
+    },
+        {
+      id: "spot-suggest",
+      title: "Spot-Suggest",
+      description: "Using Machine Learning to predict and recommend users songs based on their listening history and corresponding metrics",
+      color: "#CC8A89",
+      links: [
+        { label: "GitHub Repo", url: "https://github.com/victoriapuck15/Spot-Suggest" }
+      ],
+      section1: "Objective",
+      researchQuestion: `To create a selection of music suggestions based on a user's playlist, based on several musical metrics such as key, valence and tempo. Using the cosine similarity calculations & vectorized data to train the model, it returns 40 songs that are mathematically closest to the given playlist.`,
+  
+      techniques: ["Python", "numpy", "Pandas", "sklearn","matplotlib","spotipy"],
+      icon1: "devicon-pandas-plain-wordmark",
+      icon2: "devicon-numpy-plain",
+      icon3: "devicon-matplotlib-plain",
+      lastTitle: 'Methodology',
+      outcomes: `Programmed in python, using the pandas, numpy, sklearn, matplotlib and spotipy libraries. Training was conducted using cosine similarity functions from the sklearn libraries, which computes similarity as the normalized dot product of X and Y. Dataset retrieved using the Spotify API.`
     }
   ];
   
