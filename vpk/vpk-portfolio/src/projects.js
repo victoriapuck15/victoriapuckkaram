@@ -20,7 +20,7 @@ const projects = [
       ],
       icon1: "devicon-python-plain",
       icon2: "devicon-matlab-plain",
-      icon3: "devicon-rstudio-plain",
+      icon3: "devicon-r-plain",
       lastTitle: 'Findings',
       outcomes: `The Consumer Sentiment Index (CSI) is a pivotal indicator of consumer confidence and perception regarding current and future economic conditions. In the correlation analysis between the CSI and CMCI the correlation coefficient is 0.65, indicating a moderately positive correlation. The associated p-value is extremely small (3.29 × 10−12), leading to the conclusion that the is statistically significant. Therefore, there is compelling evidence to suggest a meaningful relationship between the CSI and the CMCI.`
     },

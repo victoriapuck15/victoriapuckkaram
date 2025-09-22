@@ -7,11 +7,15 @@ import projects from "./projects";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import timelineData from "./timeline";
+
 
 
 function App() {
   const [navScrolled, setNavScrolled] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedTimelineEvent, setSelectedTimelineEvent] = useState(null);
+
 
   useEffect(() => {
     const handleScroll = () => setNavScrolled(window.scrollY > 50);
@@ -27,6 +31,7 @@ function App() {
   <Section id="projects" title="">
     <div className="projects-wrapper">
       <div className="slider-column">
+         <h2>Projects</h2>
         <Slider {...settings}>
           {projects.map((proj) => (
             <ProjectCard
@@ -42,18 +47,26 @@ function App() {
           ))}
         </Slider>
       </div>
-
       <div className="text-column">
-        <h2>About the Projects</h2>
-        <p>
-          Here you can describe your projects in more detail, share insights,
-          goals, or anything else you'd like your visitors to know.
-        </p>
-        <p>
-          This right column is flexible — you can add images, links, or other
-          components here.
-        </p>
+        <h2>Experience</h2>
+        <div className="timeline-wrapper">
+          {timelineData.map((event) => (
+            <TimelineEvent
+              key={event.id}
+              event={event}
+              onClick={() => setSelectedTimelineEvent(event)}
+            />
+          ))}
+        </div>
       </div>
+
+      {selectedTimelineEvent && (
+        <TimelineModal
+          event={selectedTimelineEvent}
+          onClose={() => setSelectedTimelineEvent(null)}
+        />
+      )}
+
     </div>
   </Section>
 </main>
@@ -96,6 +109,59 @@ function HeroSection() {
     </section>
   );
 }
+
+function TimelineEvent({ event, onClick }) {
+  return (
+    <div className="timeline-event">
+      <div className="timeline-title" onClick={onClick}>
+        <a href="#!" onClick={onClick}>
+          <h3 className="company-name">{event.company}</h3>
+          <h4 className="role-title">{event.role}</h4>
+        </a>
+      </div>
+      <p>{event.description}</p>
+      <div className="timeline-skills">
+        {event.skills.map((iconClass, idx) => (
+          <i key={idx} className={iconClass} aria-hidden="true"></i>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+
+function TimelineModal({ event, onClose }) {
+  return (
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        <button className="close-button" onClick={onClose}>
+          &times;
+        </button>
+
+        <h2>{event.title}</h2>
+
+        <ul className="modal-bullets">
+          {event.details.bullets.map((bullet, idx) => (
+            <li key={idx}>{bullet}</li>
+          ))}
+        </ul>
+
+        {event.details.link && (
+          <a
+            href={event.details.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="modal-link"
+          >
+            View More
+          </a>
+        )}
+      </div>
+    </div>
+  );
+}
+
+
 
 function Section({ title, children, id }) {
   return (
@@ -182,7 +248,7 @@ function SocialIcons() {
 
 const settings = {
   dots: true,
-  arrows: true,
+  arrows: false,
   infinite: true,
   speed: 500,
   slidesToShow: 1,
