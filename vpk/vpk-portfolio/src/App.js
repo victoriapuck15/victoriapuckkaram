@@ -8,6 +8,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import timelineData from "./timeline";
+import awards from "./awards";
 
 
 
@@ -25,7 +26,6 @@ function App() {
 
   return (
     <div className="App">
-      <Navigation scrolled={navScrolled} />
       <HeroSection />
 <main className="content">
   <Section id="projects" title="">
@@ -46,6 +46,43 @@ function App() {
             />
           ))}
         </Slider>
+<div className="awards-column">
+  <h2>Awards & Certifications</h2>
+  <div className="awards-wrapper">
+    {awards.map((award) => {
+      if (award.type === "badge") {
+        return (
+          <a
+            key={award.id}
+            href={award.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="award-badge"
+            title={award.name}
+          >
+            <img src={award.image} alt={award.name} />
+          </a>
+        );
+      } else if (award.type === "icon") {
+        const Icon = award.icon;
+        return (
+          <a
+            key={award.id}
+            href={award.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="award-icon"
+            title={award.name}
+          >
+            <Icon size={50} />
+          </a>
+        );
+      }
+      return null;
+    })}
+  </div>
+</div>
+
       </div>
       <div className="text-column">
         <h2>Experience</h2>
@@ -82,15 +119,6 @@ function App() {
   );
 }
 
-function Navigation({ scrolled }) {
-  return (
-    <nav className={`navigation ${scrolled ? "scrolled" : ""}`}>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#resume">Resume</a>
-    </nav>
-  );
-}
 
 function HeroSection() {
   return (
@@ -102,6 +130,13 @@ function HeroSection() {
         <p className="hero-blurb">
           Passionate about building scalable, data-driven systems, specializing in backend engineering and cloud infrastructure.
         </p>
+        <a
+          href="vpk-portfolio/public/Victoria_Puck_Karam_Resume_2025.pdf" 
+          download
+          className="resume-button"
+        >
+          Download Resume
+        </a>
       </div>
       <div className="hero-photo">
         <img src={toya} alt="Victoria Puck-Karam" />
@@ -112,14 +147,18 @@ function HeroSection() {
 
 function TimelineEvent({ event, onClick }) {
   return (
-    <div className="timeline-event">
-      <div className="timeline-title" onClick={onClick}>
-        <a href="#!" onClick={onClick}>
-          <h3 className="company-name">{event.company}</h3>
-          <h4 className="role-title">{event.role}</h4>
-        </a>
+    <div
+      className="timeline-event"
+      onClick={onClick}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => e.key === "Enter" && onClick()}
+    >
+      <div className="timeline-header">
+        <h3 className="company-name">{event.company}</h3>
+        <h4 className="role-title">{event.role}</h4>
       </div>
-      <p>{event.description}</p>
+      <p className="timeline-description">{event.description}</p>
       <div className="timeline-skills">
         {event.skills.map((iconClass, idx) => (
           <i key={idx} className={iconClass} aria-hidden="true"></i>
