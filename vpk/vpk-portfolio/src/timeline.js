@@ -5,7 +5,7 @@ const timelineData = [
     company: "JPMorgan Chase & Co.",
     role: "Software Engineer I",
     description: "Engineered enterprise-grade AI and backend infrastructure—including an LLM RAG solution, Spring-based automation services, and resilient CI/CD systems—modernizing loan delivery operations, reducing compliance costs, and accelerating data-driven insights.",
-    skills: ["devicon-spring-original","devicon-amazonwebservices-plain-wordmark","devicon-terraform-plain","devicon-jenkins-plain","devicon-python-plain","devicon-docker-plain","devicon-dynamodb-plain","devicon-git-plain","devicon-java-plain","devicon-javascript-plain","devicon-maven-plain","devicon-react-original","devicon-postman-plain","devicon-grafana-plain" ],
+    skills: ["devicon-spring-original","devicon-amazonwebservices-plain-wordmark","devicon-terraform-plain","devicon-jenkins-plain","devicon-typescript-plain","devicon-python-plain","devicon-dynamodb-plain","devicon-javascript-plain","devicon-maven-plain","devicon-react-original","devicon-postman-plain","devicon-grafana-plain" ],
     details: {
     bullets: [
     
@@ -23,7 +23,7 @@ const timelineData = [
     company: "Out2Win",
     role: "Software Engineering Consultant",
     description: "Built scalable AWS Lambda pipelines in Python to automate athlete data collection and storage with Playwright and Airtable, powering an AI-driven marketing platform with rich social media insights.",
-    skills: ["devicon-amazonwebservices-plain-wordmark","devicon-python-plain","devicon-docker-plain","devicon-playwright-plain","devicon-postgresql-plain"],
+    skills: ["devicon-amazonwebservices-plain-wordmark","devicon-bash-plain","devicon-python-plain","devicon-docker-plain","devicon-playwright-plain","devicon-postgresql-plain"],
     details: {
     bullets: [
       "Developed scalable Python AWS Lambda pipelines leveraging Playwright for automated web scraping, optimizing data ingestion for the startup’s AI-powered athlete marketing system.",
@@ -37,7 +37,7 @@ const timelineData = [
     company: "JPMorgan Chase & Co.",
     role: "Software Engineer Intern",
     description: "Engineered high-throughput Spring Boot microservices integrated with Kafka and deployed on Kubernetes via Jenkins, achieving real-time data ingestion",
-    skills: ["devicon-spring-original","devicon-apachekafka-original" ,"devicon-cucumber-plain","devicon-jenkins-plain","devicon-junit-plain","devicon-kubernetes-plain","devicon-sqlite-plain","devicon-swagger-plain"],
+    skills: ["devicon-spring-original","devicon-apachekafka-original" ,"devicon-cucumber-plain","devicon-jenkins-plain","devicon-git-plain","devicon-junit-plain","devicon-kubernetes-plain","devicon-sqlite-plain","devicon-swagger-plain"],
     details: {
     bullets: [
       "Engineered a high-throughput Java Spring Boot microservice to decrypt, parse, and store events from multiple data streams; integrated Kafka consumers to process over 10,000 messages per minute with real-time ingestion and persistence.",
@@ -53,7 +53,7 @@ const timelineData = [
     company: "MAXAR Technologies",
     role: "Data Science Intern",
     description:  "Surfacing actionable insights from large-scale historical sales and geospatial data sets and visualizing data using an ESRI dashboard to advise optimization and effective data-driven decision making essential to intelligence customers and in advising the sales execution teams.",
-    skills: ["devicon-spring-original","devicon-amazonwebservices-plain-wordmark","devicon-python-plain","devicon-docker-plain","devicon-dynamodb-plain","devicon-git-plain","devicon-java-plain","devicon-javascript-plain","devicon-maven-plain","devicon-react-original" ],
+    skills: ["devicon-python-plain","devicon-apacheairflow-plain","devicon-postgresql-plain","devicon-jupyter-plain","devicon-numpy-plain","devicon-matplotlib-plain" ],
     details: {
     bullets: [
       "Executing the business understanding step of the data science life cycle by facilitating interdisciplinary communication to translate client, product manager, and sales team asks into executable technical tasks.",
