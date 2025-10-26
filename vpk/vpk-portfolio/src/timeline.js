@@ -57,7 +57,7 @@ const timelineData = [
     details: {
     bullets: [
       "Executing the business understanding step of the data science life cycle by facilitating interdisciplinary communication to translate client, product manager, and sales team asks into executable technical tasks.",
-      "Automating robust ETLs (Python \& SQL) using an Apache Airflow server to ingest data from S3 buckets into PostgreSQL RDS.",
+      "Automating robust ETLs (Python and SQL) using an Apache Airflow server to ingest data from S3 buckets into PostgreSQL RDS.",
       "Deriving data understanding through performing statistical analysis using Scikit learn, PyMC and NumPy and producing preliminary visualizations with matplotlib, Seaborn, and PyPlot, as a precursor to modeling and finalized visualization."
     ]
     },
