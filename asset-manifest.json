@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/www.victoriapuckkaram.com/static/css/main.06fd20f4.css",
-    "main.js": "/www.victoriapuckkaram.com/static/js/main.0dda220b.js",
+    "main.js": "/www.victoriapuckkaram.com/static/js/main.6aaddc6e.js",
     "static/js/453.e2f858a4.chunk.js": "/www.victoriapuckkaram.com/static/js/453.e2f858a4.chunk.js",
     "static/media/toya.JPG": "/www.victoriapuckkaram.com/static/media/toya.dcd6066192c842327bd9.JPG",
     "static/media/slick.svg": "/www.victoriapuckkaram.com/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -10,11 +10,11 @@
     "static/media/slick.woff": "/www.victoriapuckkaram.com/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/www.victoriapuckkaram.com/index.html",
     "main.06fd20f4.css.map": "/www.victoriapuckkaram.com/static/css/main.06fd20f4.css.map",
-    "main.0dda220b.js.map": "/www.victoriapuckkaram.com/static/js/main.0dda220b.js.map",
+    "main.6aaddc6e.js.map": "/www.victoriapuckkaram.com/static/js/main.6aaddc6e.js.map",
     "453.e2f858a4.chunk.js.map": "/www.victoriapuckkaram.com/static/js/453.e2f858a4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.06fd20f4.css",
-    "static/js/main.0dda220b.js"
+    "static/js/main.6aaddc6e.js"
   ]
 }
