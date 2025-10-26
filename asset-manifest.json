@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/victoriapuckkaram/static/css/main.eabab88e.css",
-    "main.js": "/victoriapuckkaram/static/js/main.c9d3c7b7.js",
+    "main.js": "/victoriapuckkaram/static/js/main.244fe993.js",
     "static/js/453.e2f858a4.chunk.js": "/victoriapuckkaram/static/js/453.e2f858a4.chunk.js",
     "static/media/toya.JPG": "/victoriapuckkaram/static/media/toya.dcd6066192c842327bd9.JPG",
     "static/media/slick.svg": "/victoriapuckkaram/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -10,11 +10,11 @@
     "static/media/slick.woff": "/victoriapuckkaram/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/victoriapuckkaram/index.html",
     "main.eabab88e.css.map": "/victoriapuckkaram/static/css/main.eabab88e.css.map",
-    "main.c9d3c7b7.js.map": "/victoriapuckkaram/static/js/main.c9d3c7b7.js.map",
+    "main.244fe993.js.map": "/victoriapuckkaram/static/js/main.244fe993.js.map",
     "453.e2f858a4.chunk.js.map": "/victoriapuckkaram/static/js/453.e2f858a4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eabab88e.css",
-    "static/js/main.c9d3c7b7.js"
+    "static/js/main.244fe993.js"
   ]
 }
