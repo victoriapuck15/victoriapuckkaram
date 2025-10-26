@@ -9,7 +9,7 @@ const timelineData = [
     details: {
     bullets: [
     
-      "Architected and productionized a domain-specific LLM RAG pipeline integrating OpenSearch vector DB with GPT embeddings model for semantic retrieval of unstructured data, eliminating knowledge silos, and accelerating root-cause analysis.",
+      "Architected a domain-specific LLM RAG pipeline integrating OpenSearch vector DB with GPT embeddings model for semantic retrieval of unstructured data, eliminating knowledge silos, and accelerating root-cause analysis.",
       "Delivered full-stack internal tools with Java Spring, Terraform, Python, and AWS, eliminating bottlenecks in the Home Lending loan delivery pipeline and saving hundreds of engineering hours annually.",
       "Translated complex regulatory and financial logic into backend automation using JS; deployed solutions that saved millions in compliance costs.",
       "Built and maintained resilient CI/CD infrastructure with Spinnaker and Jenkins, integrating contract, performance,and chaos testing to ensure safe, stable production releases",
