@@ -131,7 +131,7 @@ function HeroSection() {
           Passionate about building scalable, data-driven systems, specializing in backend engineering and cloud infrastructure.
         </p>
         <a
-          href="vpk-portfolio/public/Victoria_Puck_Karam_Resume_2025.pdf" 
+          href="https://drive.google.com/file/d/1ZG992MIikTd69tzHYWYzLOoYjl1D87AH/view?usp=sharing" 
           download
           className="resume-button"
         >
