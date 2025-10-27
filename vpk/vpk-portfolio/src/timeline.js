@@ -4,7 +4,7 @@ const timelineData = [
     id: 1,
     company: "JPMorgan Chase & Co.",
     role: "Software Engineer I",
-    description: "Engineered enterprise-grade AI and backend infrastructure—including an LLM RAG solution, Spring-based automation services, and resilient CI/CD systems—modernizing loan delivery operations, reducing compliance costs, and accelerating data-driven insights.",
+    description: "Engineered enterprise-grade AI and infrastructure—including an LLM RAG solution, Spring-based automation services, and resilient CI/CD systems—modernizing loan delivery operations, reducing compliance costs, and accelerating data-driven insights.",
     skills: ["devicon-spring-original","devicon-amazonwebservices-plain-wordmark","devicon-terraform-plain","devicon-jenkins-plain","devicon-typescript-plain","devicon-python-plain","devicon-dynamodb-plain","devicon-javascript-plain","devicon-maven-plain","devicon-react-original","devicon-postman-plain","devicon-grafana-plain" ],
     details: {
     bullets: [
