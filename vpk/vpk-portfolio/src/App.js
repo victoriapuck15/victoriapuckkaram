@@ -123,6 +123,11 @@ function App() {
           onClose={() => setSelectedProject(null)}
         />
       )}
+      <footer className="site-footer">
+  <p>
+    &copy; {new Date().getFullYear()} Victoria Puck-Karam. Last updated: {new Date(document.lastModified).toLocaleDateString()}.
+  </p>
+</footer>
     </div>
   );
 }

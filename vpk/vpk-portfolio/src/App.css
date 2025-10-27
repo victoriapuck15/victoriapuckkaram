@@ -676,3 +676,17 @@ body {
   background-color: #fff;
   transform: translateY(-2px);
 }
+.site-footer {
+  background-color: #4C6663; 
+  color: #FAF9F6;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+  border-top: 2px solid #FAF9F6;
+}
+
+.site-footer p {
+  margin: 0;
+  line-height: 1.4;
+}
