@@ -251,6 +251,8 @@ html, body, .App {
   justify-content: center; 
   align-items: center; 
   z-index: 999; 
+  padding: 1rem;
+  overflow-y: auto;
 }
 
 .modal-content {
@@ -258,13 +260,15 @@ html, body, .App {
   line-height: 1.6;                 
   font-size: 1rem;                  
   padding: 2rem;                    
-  max-width: 700px;                
+  max-width: 700px;   
+  max-height: 90vh;             
   margin: 0 auto;                 
   color: #333;                   
   background-color: #FAF9F6;        
   border-radius: 8px;             
   overflow-y: auto;     
-  position: relative;             
+  position: relative;   
+            
 }
 
 .modal-content h2, 
@@ -456,6 +460,12 @@ MOBILE STYLES
     font-size: 0.95rem;      
     line-height: 1.5;         
     max-width: 90vw;         
+  }
+
+    .close-button {
+    font-size: 22px;
+    right: 12px;
+    top: 12px;
   }
 
   .hero-photo {
