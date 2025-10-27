@@ -116,9 +116,15 @@ body {
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
+    align-items: center;
     padding: 20px;
     gap: 20px;
     text-align: center;
+  }
+
+  /* Move headshot above the text */
+  .hero-photo {
+    order: -1; /* Moves photo above text */
   }
 
   .hero-photo img {
@@ -144,16 +150,18 @@ body {
     line-height: 1.3;
   }
 
+  /* Make social icons horizontal below the text */
   .social-icons {
+    flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     margin-top: 10px;
-    color: #FAF9F6;
+    flex-wrap: wrap;
   }
 
   .resume-button {
     margin: 10px auto 0 auto;
+    padding: 10px 20px;
   }
 }
 
@@ -465,12 +473,22 @@ body {
 }
 
 
+/* Timeline skills icons */
 .timeline-skills {
   margin-top: 8px;
   display: flex;
   gap: 10px;
   justify-content: center; 
-  font-size: 25px; 
+  font-size: 30px; 
+  flex-wrap: wrap; 
+}
+
+/* smaller icons on mobile so they fit better */
+@media (max-width: 600px) {
+  .timeline-skills {
+    font-size: 20px;
+    gap: 8px;
+  }
 }
 
 .modal-overlay {
