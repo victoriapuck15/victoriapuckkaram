@@ -359,23 +359,22 @@ body {
   z-index: 2;
 }
 
-/* Mobile adjustments for slider arrows */
 @media (max-width: 768px) {
-  /* Mobile text wrapping for section intro */
 .section-intro {
   max-width: 100%;
   word-wrap: break-word;
   white-space: normal;
+  overflow: visible;
   text-align: center;
-  margin: 0 auto 1rem auto; /* centers and gives small spacing below */
-  font-size: 1rem; /* adjust if needed for readability */
+  text-overflow: clip;
+  margin: 0 auto 1rem auto; 
+  font-size: 1rem; 
 }
-
   .slick-prev,
   .slick-next {
-    left: 5px !important;    /* bring arrows inside slider */
-    right: 5px !important;   /* bring arrows inside slider */
-    font-size: 20px !important; /* smaller arrows for mobile */
+    left: 5px !important;    
+    right: 5px !important;   
+    font-size: 20px !important;
   }
 
   .slick-prev {
@@ -535,6 +534,9 @@ body {
 }
 .section-intro {
   text-align: center;
+  white-space: normal; 
+  overflow: visible;   
+  text-overflow: clip; 
   font-style: italic;
   margin-bottom: .75rem;
   color: #4C6663AA;
