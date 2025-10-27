@@ -407,7 +407,7 @@ body {
   gap: 40px; 
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: -30px;
   align-items: flex-start; 
 }
 
@@ -502,6 +502,13 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 999;
+}
+.section-intro {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: .75rem;
+  color: #4C6663AA;
+  font-size: 1.2rem;
 }
 
 .modal-content {

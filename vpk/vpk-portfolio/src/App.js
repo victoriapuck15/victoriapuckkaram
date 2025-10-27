@@ -29,9 +29,17 @@ function App() {
       <HeroSection />
 <main className="content">
   <Section id="projects" title="">
+  <p className="section-intro">
+    Below you'll find a showcase of projects, awards, and experiences. Click on any item to learn more.
+  </p>
+  <div className="projects-wrapper">
+    ...
+  </div>
+</Section>
+  <Section id="projects" title="">
     <div className="projects-wrapper">
       <div className="slider-column">
-         <h2>Projects</h2>
+         <h1>Projects</h1>
         <Slider {...settings}>
           {projects.map((proj) => (
             <ProjectCard
@@ -47,7 +55,7 @@ function App() {
           ))}
         </Slider>
 <div className="awards-column">
-  <h2>Awards & Certifications</h2>
+  <h1>Awards & Certifications</h1>
   <div className="awards-wrapper">
     {awards.map((award) => {
       if (award.type === "badge") {
@@ -85,7 +93,7 @@ function App() {
 
       </div>
       <div className="text-column">
-        <h2>Experience</h2>
+        <h1>Experience</h1>
         <div className="timeline-wrapper">
           {timelineData.map((event) => (
             <TimelineEvent
