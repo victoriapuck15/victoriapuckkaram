@@ -152,7 +152,7 @@ body {
 
   /* Make social icons horizontal below the text */
   .social-icons {
-    flex-direction: row;
+    flex-direction: row !important; /* force horizontal */
     justify-content: center;
     gap: 15px;
     margin-top: 10px;
@@ -359,7 +359,37 @@ body {
   z-index: 2;
 }
 
+/* Mobile adjustments for slider arrows */
+@media (max-width: 768px) {
+  /* Mobile text wrapping for section intro */
+.section-intro {
+  max-width: 100%;
+  word-wrap: break-word;
+  white-space: normal;
+  text-align: center;
+  margin: 0 auto 1rem auto; /* centers and gives small spacing below */
+  font-size: 1rem; /* adjust if needed for readability */
+}
 
+  .slick-prev,
+  .slick-next {
+    left: 5px !important;    /* bring arrows inside slider */
+    right: 5px !important;   /* bring arrows inside slider */
+    font-size: 20px !important; /* smaller arrows for mobile */
+  }
+
+  .slick-prev {
+    z-index: 2;
+  }
+
+  .slick-next {
+    z-index: 2;
+  }
+
+  .slick-list {
+    overflow: hidden; /* prevent overflow on small screens */
+  }
+}
 .modal-overlay {
   position: fixed;
   top: 0;

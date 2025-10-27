@@ -29,9 +29,9 @@ function App() {
       <HeroSection />
 <main className="content">
   <Section id="projects" title="">
-  <p className="section-intro">
-    Below you'll find a showcase of projects, awards, and experiences. Click on any item to learn more.
-  </p>
+<div className="section-intro">
+  Below you'll find a showcase of projects, awards, and experiences. Click on any item to learn more.
+</div>
   <div className="projects-wrapper">
     ...
   </div>
