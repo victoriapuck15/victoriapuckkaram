@@ -32,7 +32,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",              
-    "deploy": "npm run build && touch build/.nojekyll && gh-pages -d build -CNAME"
+    "deploy": "touch build/.nojekyll && echo 'www.victoriapuckkaram.com' > build/CNAME && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
