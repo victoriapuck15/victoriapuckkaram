@@ -235,10 +235,11 @@ html, body, .App {
 }
 
 .role-title { 
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 400; 
   margin: 4px 0 0 0; 
   color: #555; 
+  text-align: center;
 }
 
 .modal-overlay { 
@@ -253,6 +254,7 @@ html, body, .App {
   z-index: 999; 
   padding: 1rem;
   overflow-y: auto;
+  box-sizing: border-box;
 }
 
 .modal-content {
@@ -262,12 +264,14 @@ html, body, .App {
   padding: 2rem;                    
   max-width: 700px;   
   max-height: 90vh;             
-  margin: 0 auto;                 
+  margin: auto;           
   color: #333;                   
   background-color: #FAF9F6;        
   border-radius: 8px;             
   overflow-y: auto;     
-  position: relative;   
+  position: relative;  
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  box-sizing: border-box; 
             
 }
 
@@ -318,11 +322,19 @@ html, body, .App {
   line-height: 1.5; 
 } 
 
-.modal-link { 
-  color: #4C6663AA; 
-  text-decoration: underline; 
-  font-weight: 500; } 
+.modal-links {
+  display: flex;
+  flex-direction: column; /* stack links vertically */
+  gap: 0.5rem; /* spacing between links */
+  margin-top: 1rem;
+}
 
+.modal-links a {
+  word-break: break-word; /* ensures long URLs break properly */
+  color: #4C6663AA;
+  text-decoration: underline;
+  font-weight: 500;
+}
 .timeline-title { 
   text-align: center; 
   margin-bottom: 8px; 
@@ -336,9 +348,10 @@ html, body, .App {
 
 .company-name { 
   font-size: 1.3rem; 
-  font-weight: 600; 
+  font-weight: 700; 
   margin: 0; 
   color: #111; 
+  text-align: center;
 }
 
 

@@ -183,6 +183,14 @@ function TimelineModal({ event, onClose }) {
           &times;
         </button>
 
+       
+        {event.company && (
+          <h3 className="company-name">{event.company}</h3>
+        )}
+        {event.role && (
+          <h4 className="role-title">{event.role}</h4>
+        )}
+
         <h2>{event.title}</h2>
 
         <ul className="modal-bullets">
