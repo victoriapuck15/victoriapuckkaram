@@ -48,7 +48,6 @@ body {
   background-color: #4C6663;
   color: #FAF9F6;
 }
-/* Desktop/Tablet Hero */
 .hero {
   display: flex;
   justify-content: center;
@@ -112,7 +111,6 @@ body {
   background-color: #e0e0e0;
 }
 
-/* Mobile/iPhone adjustments */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
@@ -121,10 +119,8 @@ body {
     gap: 20px;
     text-align: center;
   }
-
-  /* Move headshot above the text */
   .hero-photo {
-    order: -1; /* Moves photo above text */
+    order: -1; 
   }
 
   .hero-photo img {
@@ -150,9 +146,8 @@ body {
     line-height: 1.3;
   }
 
-  /* Make social icons horizontal below the text */
   .social-icons {
-    flex-direction: row !important; /* force horizontal */
+    flex-direction: row !important; 
     justify-content: center;
     gap: 15px;
     margin-top: 10px;
@@ -212,7 +207,6 @@ body {
     grid-template-columns: 1fr;
   }
 }
-/* Extra small screens (iPhone SE, 5/5S) */
 @media (max-width: 375px) {
   .hero {
     padding: 15px;
@@ -250,7 +244,6 @@ body {
 .card {
   background-color: var(--card-bg, #4C6663);
   color: white;
-  /*padding: 8px;*/
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -370,24 +363,31 @@ body {
   margin: 0 auto 1rem auto; 
   font-size: 1rem; 
 }
-  .slick-prev,
-  .slick-next {
-    left: 5px !important;    
-    right: 5px !important;   
-    font-size: 20px !important;
+
+@media (max-width: 768px) {
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 24px !important;
   }
 
   .slick-prev {
-    z-index: 2;
+    left: 5px;      
   }
 
   .slick-next {
-    z-index: 2;
+    right: 5px;    
   }
 
-  .slick-list {
-    overflow: hidden; /* prevent overflow on small screens */
+  .slick-prev,
+  .slick-next {
+    top: 50%;
+    transform: translateY(-50%);
   }
+
+  .project-slider {
+    padding: 0 30px;
+  }
+}
 }
 .modal-overlay {
   position: fixed;
@@ -501,8 +501,6 @@ body {
   filter: brightness(0.95);
 }
 
-
-/* Timeline skills icons */
 .timeline-skills {
   margin-top: 8px;
   display: flex;
@@ -512,7 +510,6 @@ body {
   flex-wrap: wrap; 
 }
 
-/* smaller icons on mobile so they fit better */
 @media (max-width: 600px) {
   .timeline-skills {
     font-size: 20px;
@@ -584,7 +581,7 @@ body {
 }
 .timeline-title a {
   text-decoration: none;
-  color: inherit;  /* Keeps the text color unchanged */
+  color: inherit;  
   display: inline-block;
 }
 
@@ -628,7 +625,7 @@ body {
 
 .award-card i {
   font-size: 1.8rem;
-  color: #0d6efd; /* you can tweak this to match your theme */
+  color: #0d6efd; 
 }
 
 .awards-wrapper {
@@ -639,7 +636,6 @@ body {
   margin-top: 1rem;
 }
 
-/* For React Icon awards */
 .award-icon {
   color: #0d6efd;
   transition: transform 0.3s ease, color 0.3s ease;
@@ -650,7 +646,6 @@ body {
   color: #ff9900;
 }
 
-/* For image badges */
 .award-badge img {
   width: 100px;
   height: auto;
