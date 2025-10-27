@@ -10,8 +10,6 @@ import "slick-carousel/slick/slick-theme.css";
 import timelineData from "./timeline";
 import awards from "./awards";
 
-
-
 function App() {
   const [navScrolled, setNavScrolled] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
@@ -104,30 +102,26 @@ function App() {
           ))}
         </div>
       </div>
-
       {selectedTimelineEvent && (
         <TimelineModal
           event={selectedTimelineEvent}
           onClose={() => setSelectedTimelineEvent(null)}
         />
       )}
-
     </div>
   </Section>
 </main>
-
-
       {selectedProject && (
         <ProjectModal
           project={selectedProject}
           onClose={() => setSelectedProject(null)}
         />
       )}
-      <footer className="site-footer">
-  <p>
-    &copy; {new Date().getFullYear()} Victoria Puck-Karam. Last updated: {new Date(document.lastModified).toLocaleDateString()}.
-  </p>
+<footer className="site-footer">
+  <span className="footer-name">&copy; {new Date().getFullYear()} Victoria Puck-Karam</span><br />
+  <span className="footer-updated">Last updated: {new Date(document.lastModified).toLocaleDateString()}</span>
 </footer>
+
     </div>
   );
 }
