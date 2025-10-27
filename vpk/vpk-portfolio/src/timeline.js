@@ -22,7 +22,7 @@ const timelineData = [
     id: 2,
     company: "Out2Win",
     role: "Software Engineering Consultant",
-    description: "Built scalable AWS Lambda pipelines in Python to automate athlete data collection and storage with Playwright and Airtable, powering an AI-driven marketing platform with rich social media insights.",
+    description: "Built scalable AWS Lambda pipelines in Python to automate athlete data collection and storage with Playwright and Amazon RDS, powering an AI-driven marketing platform with rich social media insights.",
     skills: ["devicon-amazonwebservices-plain-wordmark","devicon-bash-plain","devicon-python-plain","devicon-docker-plain","devicon-playwright-plain","devicon-postgresql-plain"],
     details: {
     bullets: [
@@ -52,7 +52,7 @@ const timelineData = [
     id: 4,
     company: "MAXAR Technologies",
     role: "Data Science Intern",
-    description:  "Surfacing actionable insights from large-scale historical sales and geospatial data sets and visualizing data using an ESRI dashboard to advise optimization and effective data-driven decision making essential to intelligence customers and in advising the sales execution teams.",
+    description:  "Leveraged large-scale sales and geospatial data to generate actionable insights, visualized via ESRI dashboards, enabling data-driven decisions for intelligence clients and sales teams.",
     skills: ["devicon-python-plain","devicon-apacheairflow-plain","devicon-postgresql-plain","devicon-jupyter-plain","devicon-numpy-plain","devicon-matplotlib-plain" ],
     details: {
     bullets: [
