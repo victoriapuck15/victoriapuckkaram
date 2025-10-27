@@ -31,7 +31,6 @@ function App() {
   Below you'll find a showcase of projects, awards, and experiences. Click on any item to learn more.
 </div>
   <div className="projects-wrapper">
-    ...
   </div>
 </Section>
   <Section id="projects" title="">
@@ -133,7 +132,7 @@ function HeroSection() {
       <SocialIcons />
       <div className="hero-text">
         <h1 className="hero-name">Victoria Puck-Karam</h1>
-        <h3 className="hero-title">Backend Software Engineer & Data Scientist</h3>
+        <h3 className="hero-title"> Software Engineer & Data Scientist</h3>
         <p className="hero-blurb">
           Passionate about building scalable, data-driven systems, specializing in backend engineering and cloud infrastructure.
         </p>
