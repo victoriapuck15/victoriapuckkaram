@@ -137,7 +137,11 @@ function HeroSection() {
         <p className="hero-blurb">
           Passionate about building scalable, data-driven systems, specializing in backend engineering and cloud infrastructure.
         </p>
-        <a href={resume} target="_blank">See Resume</a>
+        <a href={resume} 
+        target="_blank"
+        className="resume-button">
+        See Resume
+        </a>
 
       </div>
       <div className="hero-photo">
