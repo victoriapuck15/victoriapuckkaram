@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import toya from "./toya.JPG";
+import resume from "./Victoria_Puck_Karam_Resume_2026.pdf";
 import { BiLogoGithub, BiLogoLinkedinSquare } from "react-icons/bi";
 import { MdOutlineMailOutline } from "react-icons/md";
 import projects from "./projects";
@@ -136,7 +137,7 @@ function HeroSection() {
         <p className="hero-blurb">
           Passionate about building scalable, data-driven systems, specializing in backend engineering and cloud infrastructure.
         </p>
-        <a href="Victoria_Puck_Karam_Resume_2026.pdf" target="_blank">See Resume</a>
+        <a href={resume} target="_blank">See Resume</a>
 
       </div>
       <div className="hero-photo">
