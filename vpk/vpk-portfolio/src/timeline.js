@@ -1,15 +1,30 @@
 
 const timelineData = [
-  {
+    {
     id: 1,
     company: "JPMorgan Chase & Co.",
+    role: "Software Engineer II",
+    description: "High-performing Software Engineer II recognized in the top 5% globally, leading AI-driven platform modernization initiatives that transformed monolithic systems into scalable microservices, delivered LLM-powered knowledge solutions, and drove 922% user growth without compromising reliability.",
+    skills: ["devicon-spring-original","devicon-amazonwebservices-plain-wordmark","devicon-terraform-plain","devicon-jenkins-plain","devicon-typescript-plain","devicon-python-plain","devicon-dynamodb-plain","devicon-javascript-plain","devicon-maven-plain","devicon-react-original","devicon-postman-plain","devicon-grafana-plain" ],
+    details: {
+    bullets: [
+      "Recognized in the top 5% of global early-career software engineers and fast-tracked for promotion based on performance and impact.",
+      "Architected a domain-specific LLM RAG pipeline integrating OpenSearch vector DB with GPT embeddings model for semantic retrieval of unstructured data, eliminating knowledge silos, and accelerating root-cause analysis.", 
+      "Modernized a legacy monolithic automation system into a scalable microservices architecture, improving maintainability and reliability while preserving production stability and user experience.", 
+      "Rebranded and scaled the internal automation platform, driving 922% user growth and expanding infrastructure to support significantly higher workload volumes without performance degradation. "
+
+      ],
+    },
+  },
+  {
+    id: 2,
+    company: "JPMorgan Chase & Co.",
     role: "Software Engineer I",
-    description: "Engineered enterprise-grade AI and infrastructure—including an LLM RAG solution, Spring-based automation services, and resilient CI/CD systems—modernizing loan delivery operations, reducing compliance costs, and accelerating data-driven insights.",
+    description: "Engineered enterprise-grade microservices and infrastructure—including Spring-based automation services and resilient CI/CD systems—modernizing loan delivery operations, reducing compliance costs, and accelerating data-driven insights.",
     skills: ["devicon-spring-original","devicon-amazonwebservices-plain-wordmark","devicon-terraform-plain","devicon-jenkins-plain","devicon-typescript-plain","devicon-python-plain","devicon-dynamodb-plain","devicon-javascript-plain","devicon-maven-plain","devicon-react-original","devicon-postman-plain","devicon-grafana-plain" ],
     details: {
     bullets: [
     
-      "Architected a domain-specific LLM RAG pipeline integrating OpenSearch vector DB with GPT embeddings model for semantic retrieval of unstructured data, eliminating knowledge silos, and accelerating root-cause analysis.",
       "Delivered full-stack internal tools with Java Spring, Terraform, Python, and AWS, eliminating bottlenecks in the Home Lending loan delivery pipeline and saving hundreds of engineering hours annually.",
       "Translated complex regulatory and financial logic into backend automation using JS; deployed solutions that saved millions in compliance costs.",
       "Built and maintained resilient CI/CD infrastructure with Spinnaker and Jenkins, integrating contract, performance,and chaos testing to ensure safe, stable production releases",
@@ -19,7 +34,7 @@ const timelineData = [
     },
   },
   {
-    id: 2,
+    id: 3,
     company: "Out2Win",
     role: "Software Engineering Consultant",
     description: "Built scalable AWS Lambda pipelines in Python to automate athlete data collection and storage with Playwright and Amazon RDS, powering an AI-driven marketing platform with rich social media insights.",
@@ -33,7 +48,7 @@ const timelineData = [
     },
   },
   {
-    id: 3,
+    id: 4,
     company: "JPMorgan Chase & Co.",
     role: "Software Engineer Intern",
     description: "Engineered high-throughput Spring Boot microservices integrated with Kafka and deployed on Kubernetes via Jenkins, achieving real-time data ingestion",
@@ -49,7 +64,7 @@ const timelineData = [
   },
     
   {
-    id: 4,
+    id: 5,
     company: "MAXAR Technologies",
     role: "Data Science Intern",
     description:  "Leveraged large-scale sales and geospatial data to generate actionable insights, visualized via ESRI dashboards, enabling data-driven decisions for intelligence clients and sales teams.",

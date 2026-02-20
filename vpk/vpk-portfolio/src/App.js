@@ -136,13 +136,8 @@ function HeroSection() {
         <p className="hero-blurb">
           Passionate about building scalable, data-driven systems, specializing in backend engineering and cloud infrastructure.
         </p>
-        <a
-          href="https://drive.google.com/file/d/1nayxdvH_tU5IVYvcECMRQrsxx8HgGZnw/view?usp=sharing" 
-          download
-          className="resume-button"
-        >
-          Download Resume
-        </a>
+        <a href="Victoria_Puck_Karam_Resume_2026.pdf" target="_blank">See Resume</a>
+
       </div>
       <div className="hero-photo">
         <img src={toya} alt="Victoria Puck-Karam" />
