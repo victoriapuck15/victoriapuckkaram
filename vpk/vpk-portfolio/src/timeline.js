@@ -4,14 +4,14 @@ const timelineData = [
     id: 1,
     company: "JPMorgan Chase & Co.",
     role: "Software Engineer II",
-    description: "High-performing Software Engineer II recognized in the top 5% globally, leading AI-driven platform modernization initiatives that transformed monolithic systems into scalable microservices, delivered LLM-powered knowledge solutions, and drove 922% user growth without compromising reliability.",
+    description: "Top 5% global Software Engineer II driving AI-powered platform modernization, transforming monoliths into scalable microservices, and delivering LLM solutions that scaled to thousands of users.",
     skills: ["devicon-spring-original","devicon-amazonwebservices-plain-wordmark","devicon-terraform-plain","devicon-jenkins-plain","devicon-typescript-plain","devicon-python-plain","devicon-dynamodb-plain","devicon-javascript-plain","devicon-maven-plain","devicon-react-original","devicon-postman-plain","devicon-grafana-plain" ],
     details: {
     bullets: [
       "Recognized in the top 5% of global early-career software engineers and fast-tracked for promotion based on performance and impact.",
-      "Architected a domain-specific LLM RAG pipeline integrating OpenSearch vector DB with GPT embeddings model for semantic retrieval of unstructured data, eliminating knowledge silos, and accelerating root-cause analysis.", 
-      "Modernized a legacy monolithic automation system into a scalable microservices architecture, improving maintainability and reliability while preserving production stability and user experience.", 
-      "Rebranded and scaled the internal automation platform, driving 922% user growth and expanding infrastructure to support significantly higher workload volumes without performance degradation. "
+      "Architected an internal LLM platform using RAG architecture and MCP servers, enabling scalable semantic retrieval across enterprise knowledge system to accelerate incident root-cause analysis.", 
+      "Migrated a legacy monolith to a cloud-native microservices architecture, improving system reliability and deployment velocity.", 
+      "Scaled internal developer platform to support 922% user growth, increasing infrastructure capacity, and improving system reliability."
 
       ],
     },
