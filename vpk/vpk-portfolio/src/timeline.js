@@ -5,7 +5,7 @@ const timelineData = [
     company: "JPMorgan Chase & Co.",
     role: "Software Engineer II",
     description: "Top 5% global Software Engineer II driving AI-powered platform modernization, transforming monoliths into scalable microservices, and delivering LLM solutions that scaled to thousands of users.",
-    skills: ["devicon-spring-original","devicon-amazonwebservices-plain-wordmark","devicon-terraform-plain","devicon-jenkins-plain","devicon-typescript-plain","devicon-python-plain","devicon-dynamodb-plain","devicon-javascript-plain","devicon-maven-plain","devicon-react-original","devicon-postman-plain","devicon-grafana-plain" ],
+    skills: ["devicon-spring-original","devicon-amazonwebservices-plain-wordmark","devicon-terraform-plain","devicon-jenkins-plain","devicon-python-plain","devicon-docker-plain","devicon-maven-plain","devicon-react-original", "devicon-splunk-original-wordmark","devicon-bash-plain" ],
     details: {
     bullets: [
       "Recognized in the top 5% of global early-career software engineers and fast-tracked for promotion based on performance and impact.",
