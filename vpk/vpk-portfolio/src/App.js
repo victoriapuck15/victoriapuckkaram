@@ -135,7 +135,7 @@ function HeroSection() {
         <h1 className="hero-name">Victoria Puck-Karam</h1>
         <h3 className="hero-title"> Software Engineer & Data Scientist</h3>
         <p className="hero-blurb">
-          Passionate about building scalable, data-driven systems, specializing in backend engineering and cloud infrastructure.
+          Building scalable backend systems and AI-powered platforms that drive real-world impact.
         </p>
         <a href={resume} 
         target="_blank"
