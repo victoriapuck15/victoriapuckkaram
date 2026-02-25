@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ed4267c7.css",
-    "main.js": "/static/js/main.2ce280a9.js",
+    "main.js": "/static/js/main.8d62c621.js",
     "static/js/453.e2f858a4.chunk.js": "/static/js/453.e2f858a4.chunk.js",
     "static/media/toya.JPG": "/static/media/toya.dcd6066192c842327bd9.JPG",
     "static/media/Victoria_Puck_Karam_Resume_2026.pdf": "/static/media/Victoria_Puck_Karam_Resume_2026.bca67746b207a1a0fe43.pdf",
@@ -11,11 +11,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.ed4267c7.css.map": "/static/css/main.ed4267c7.css.map",
-    "main.2ce280a9.js.map": "/static/js/main.2ce280a9.js.map",
+    "main.8d62c621.js.map": "/static/js/main.8d62c621.js.map",
     "453.e2f858a4.chunk.js.map": "/static/js/453.e2f858a4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ed4267c7.css",
-    "static/js/main.2ce280a9.js"
+    "static/js/main.8d62c621.js"
   ]
 }
